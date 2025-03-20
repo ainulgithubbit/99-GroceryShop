@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>99+ GroceryShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">99+ GroceryShop</div>
+        <input type="text" id="searchBar" placeholder="Search products..." onkeyup="searchProducts()">
+        <button class="cart-btn">🛒 Cart <span id="cart-count">0</span></button>
+    </header>
+
+    <!-- Product Section -->
+    <section class="products">
+        <div class="product" data-name="Apple">
+            <img src="apple.JPEG" alt="Apple">
+            <h3>Fresh Apple</h3>
+            <p>350 Tk per kg</p>
+            <button onclick="addToCart('Apple')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Milk">
+            <img src="img_2.JPG" alt="Milk">
+            <h3>Organic Milk</h3>
+            <p>130 Tk per liter</p>
+            <button onclick="addToCart('Milk')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Bread">
+            <img src="Whole Wheat Bread.jpeg" alt="Bread">
+            <h3>Whole Wheat Bread</h3>
+            <p>80 Tk per pack</p>
+            <button onclick="addToCart('Bread')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Rice">
+            <img src="lazzat-super-basmati-rice.JPEG" alt="Rice">
+            <h3>Basmati Rice</h3>
+            <p>220 Tk per kg</p>
+            <button onclick="addToCart('Rice')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Eggs">
+            <img src="farm-fresh-eggs-midwest-prime.WEBP" alt="Eggs">
+            <h3>Farm Fresh Eggs</h3>
+            <p>135 Tk per dozen</p>
+            <button onclick="addToCart('Eggs')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Tomatoes">
+            <img src="Red Tomatoes.JPEG" alt="Tomatoes">
+            <h3>Red Tomatoes</h3>
+            <p>90 Tk per kg</p>
+            <button onclick="addToCart('Tomatoes')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Potatoes">
+            <img src="Golden Potatoes.JPEG" alt="Potatoes">
+            <h3>Golden Potatoes</h3>
+            <p>30 Tk per kg</p>
+            <button onclick="addToCart('Potatoes')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Onions">
+            <img src="Fresh Onions.WEBP" alt="Onions">
+            <h3>Fresh Onions</h3>
+            <p>70 Tk per kg</p>
+            <button onclick="addToCart('Onions')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Chicken">
+            <img src="Fresh Chicken.AVIF" alt="Chicken">
+            <h3>Fresh Chicken</h3>
+            <p>300 Tk per kg</p>
+            <button onclick="addToCart('Chicken')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Noodles">
+            <img src="Chopstick Noodles.JPEG" alt="Noodles">
+            <h3>Chopstick Noodles</h3>
+            <p>150 Tk per pack</p>
+            <button onclick="addToCart('Noodles')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Shampoo">
+            <img src="Shampoo.jpeg" alt="Shampoo">
+            <h3>Shampoo</h3>
+            <p>900 Tk per bottle</p>
+            <button onclick="addToCart('Shampoo')">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="oil">
+            <img src="Fresh Oil.webp" alt="Oil">
+            <h3>Fresh Oil</h3>
+            <p>190 Tk per liter</p>
+            <button onclick="addToCart('Oil')">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>99+ GroceryShop - Your Trusted Grocery Store</p>
+        <p>Address: Block:H, Mirpur:2</Mirpur:2>, Dhaka</p>
+        <p>Contact: +880 1636092707</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
